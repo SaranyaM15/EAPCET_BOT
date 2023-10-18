@@ -6,4 +6,4 @@ python-telegram-bot
 pyTelegramBotAPI
 openpyxl==3.1.2
 time
-threading
+threading==3.12.0
