@@ -1,9 +1,7 @@
 requests==2.26.0
-
 pandas==2.1.1.
 telebot==0.0.5
 python-telegram-bot
 pyTelegramBotAPI
 openpyxl==3.1.2
-time==3.10.4
 threading==3.12.0
