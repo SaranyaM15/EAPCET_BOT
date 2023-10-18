@@ -1,0 +1,5 @@
+requests
+telebot
+pandas
+time
+threading
