@@ -15,7 +15,7 @@ admin_user_id = 1656720679
 GENDER, CASTE, BRANCH, RANK, RECOMMEND = range(5)
 
 # Load  college dataset 
-data_2023 = pd.read_csv('C:\Programming Files\EAPCET_bot\EAPCET_counseling_data_2023.csv')
+data_2023 = pd.read_csv('EAPCET_counseling_data_2023.csv')
 
 user_data = {}
 
@@ -53,7 +53,7 @@ def gender(message):
         bot.send_message(user_id, "Ivalid Input,Please enter Male or Female")
         bot.register_next_step_handler(message, gender)
 
-branches_df = pd.read_excel('C:\Programming Files\EAPCET_bot\Branches.xlsx')
+branches_df = pd.read_excel('Branches.xlsx')
 
 # Handle user input for caste
 def caste(message,Gen):
