@@ -21,16 +21,17 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-        working-directory: EAPCET_GITHUB  # Replace with your bot's code directory
+        working-directory: .github/workflows  # Use the correct relative path
 
       - name: Run your bot
         run: |
-           main.py  # Update to your bot's main script name
-        working-directory: EAPCET_GITHUB  # Replace with your bot's code directory
+          python main.py  # Update to your bot's main script name
+        working-directory: .
 
       - name: Prepare Excel Files
         run: |
-          # Copy Excel files to the working directory (if needed)
-          cp "EAPCET_GITHUB\Branches.xlsx"
-          cp "EAPCET_GITHUB\EAPCET_counseling_data_2023.csv" # Replace with the path to your Excel files
-        working-directory: EAPCET_GITHUB  # Replace with your bot's code directory
+          # Copy Excel files to the working directory
+          
+          cp Branches.xlsx EAPCET_couseling_data_2023.csv .  # Copy the Excel files to the current directory
+        working-directory: .
+
