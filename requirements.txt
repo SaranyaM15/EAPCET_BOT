@@ -1,5 +1,5 @@
 requests==2.26.0
-python-telegram-bot==19.8
+
 pandas==2.1.1.
-telebot
-pyTelegramBotAPI
+telebot==13.1.0.
+
