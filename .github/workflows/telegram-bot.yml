@@ -1,0 +1,36 @@
+name: Telegram Bot
+
+on:
+  push:
+    branches:
+      - main  # Replace 'main' with the name of your main branch (e.g., 'master')
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+        working-directory: .\C:\Programming Files\EAPCET_GITHUB  # Replace with your bot's code directory
+
+      - name: Run your bot
+        run: |
+           main.py  # Update to your bot's main script name
+        working-directory: .\C:\Programming Files\EAPCET_GITHUB  # Replace with your bot's code directory
+
+      - name: Prepare Excel Files
+        run: |
+          # Copy Excel files to the working directory (if needed)
+          cp "C:\Programming Files\EAPCET_GITHUB\Branches.xlsx"
+          cp "C:\Programming Files\EAPCET_GITHUB\EAPCET_counseling_data_2023.csv" # Replace with the path to your Excel files
+        working-directory: .\C:\Programming Files\EAPCET_GITHUB  # Replace with your bot's code directory
