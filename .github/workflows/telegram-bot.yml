@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-        working-directory: .github/workflows  # Use the correct relative path
+        working-directory: .  # Use the correct relative path
 
       - name: Run your bot
         run: |
