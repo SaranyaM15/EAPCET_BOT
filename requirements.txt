@@ -1,5 +1,3 @@
 requests
-telebot
-pandas
-time
-threading
+echo "pandas" > requirements.txt
+echo "pyTelegramBotAPI" >> requirements.txt
