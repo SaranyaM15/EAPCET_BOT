@@ -5,4 +5,5 @@ telebot==0.0.5
 python-telegram-bot
 pyTelegramBotAPI
 openpyxl==3.1.2
+time
 threading
